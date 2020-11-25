@@ -12,6 +12,7 @@
 
     <title>@yield('title')</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container">
@@ -27,7 +28,7 @@
                         <a class="nav-link text-light" href="{{url('')}}">Home</a>
                     </li>
                     <li class="nav-item dropdown btn btn-info btn-sm mr-1 mt-1">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
+                        <a class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdownMenuLink"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Profile
                         </a>
@@ -58,12 +59,58 @@
 
     <!-- Footer Start -->
     <footer class="bg-primary text-white p-2 mt-2">
-    	<div class="container">
-    		<div class="col-sm-12 mt-3 text-center">
-    			<p>Copyright © 2020 LPPM UDINUS | All
-    				rights reserved</p>
-    		</div>
-    	</div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h5>FAKULTAS</h5><hr class="bg-light col-md-4">
+                    <a href="#" class="text-light">Fakultas Ilmu Komputer</a><br>
+                    <a href="#" class="text-light">Fakultas Ilmu Budaya</a><br>
+                    <a href="#" class="text-light">Fakultas Teknik</a><br>
+                    <a href="#" class="text-light">Fakultas Kesehatan</a><br>
+                    <a href="#" class="text-light">Fakultas Ekonomi dan Bisnis</a><br>
+                    <a href="#" class="text-light">Pasca Sarjana</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>MANAJEMEN</h5><hr class="bg-light col-md-4">
+                    <a href="#" class="text-light">Kantor Penjamin Mutu</a><br>
+                    <a href="#" class="text-light">Lembaga Kerjasama</a><br>
+                    <a href="#" class="text-light">Sarana dan Prasarana</a><br>
+                    <a href="#" class="text-light">Career Centre</a><br>
+                    <a href="#" class="text-light">Penelitian dan Pengabdian</a><br>
+                    <a href="#" class="text-light">Repository</a><br>
+                    <a href="#" class="text-light">Document Gateway</a><br>
+                    <a href="#" class="text-light">Simlitabmas</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>AKADEMIK</h5><hr class="bg-light col-md-4">
+                    <a href="#" class="text-light">SiAdin Mahasiswa</a><br>
+                    <a href="#" class="text-light">SiAdin Dosen</a><br>
+                    <a href="#" class="text-light">Sistem Informasi Akademik</a><br>
+                    <a href="#" class="text-light">Sistem Informasi Kepegawaian</a><br>
+                    <a href="#" class="text-light">Sistem Informasi Wisuda</a><br>
+                    <a href="#" class="text-light">Sistem Informasi Tugas Akhir</a><br>
+                    <a href="#" class="text-light">Sistem Informasi Kerja Praktek</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>FASILITAS</h5><hr class="bg-light col-md-4">
+                    <a href="#" class="text-light">Mirror IKC</a><br>
+                    <a href="#" class="text-light">Kulino</a><br>
+                    <a href="#" class="text-light">Video Kampus</a><br>
+                    <a href="#" class="text-light">TV Kampus</a><br>
+                    <a href="#" class="text-light">Digital Library</a><br>
+                    <a href="#" class="text-light">Poliklinik</a><br>
+                    <a href="#" class="text-light">Forum Diskusi</a><br>
+                    <a href="#" class="text-light">E-Gamelan</a><br>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-sm-12 mt-1 text-center">
+                    <p>Copyright © 2020 LPPM UDINUS | All
+                        rights reserved</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Footer End -->

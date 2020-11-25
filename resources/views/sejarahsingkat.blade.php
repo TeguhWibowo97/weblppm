@@ -1,6 +1,7 @@
 @extends('template/template');
 
 @section('title','Sejarah Singkat');
+@section('active','active');
 
 @section('container')
 <div class="container mt-2">
@@ -27,7 +28,7 @@
             khususnya dan Yayasan Dian Nuswantoro sebagai penyelenggara perguruan tinggi pada umumnya. Pada tahun
             akademik 2005/2006 ini, Universitas Dian Nuswantoro memiliki 6.779 mahasiswa aktif. Sedangkan pada tahun
             2009/2010 memiliki 8.497 mahasiswa aktif dengan Jumlah staf akademik tetap sebanyak 173 orang. Dari aspek
-            umur, sebagian besar (58,24% atau 159 orang) merupakan dosen muda dan dalam usia produktif (31 â€“ 40
+            umur, sebagian besar (58,24% atau 159 orang) merupakan dosen muda dan dalam usia produktif (31 - 40
             tahun). Menurut tingkat pendidikannya, sebagian besar (42,49% atau 116 orang) berpendidikan S2.
             <br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kegiatan penelitian sebagai bagian dari Tri Dharma Pendidikan Tinggi, dikelola oleh Pusat Penelitian dan
