@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
     <title>@yield('title')</title>
 </head>
 
@@ -62,6 +63,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-3">
+                    <hr class="bg-light col-md-4">
                     <h5>FAKULTAS</h5><hr class="bg-light col-md-4">
                     <a href="#" class="text-light">Fakultas Ilmu Komputer</a><br>
                     <a href="#" class="text-light">Fakultas Ilmu Budaya</a><br>
@@ -71,6 +73,7 @@
                     <a href="#" class="text-light">Pasca Sarjana</a>
                 </div>
                 <div class="col-md-3">
+                    <hr class="bg-light col-md-4">
                     <h5>MANAJEMEN</h5><hr class="bg-light col-md-4">
                     <a href="#" class="text-light">Kantor Penjamin Mutu</a><br>
                     <a href="#" class="text-light">Lembaga Kerjasama</a><br>
@@ -82,6 +85,7 @@
                     <a href="#" class="text-light">Simlitabmas</a>
                 </div>
                 <div class="col-md-3">
+                    <hr class="bg-light col-md-4">
                     <h5>AKADEMIK</h5><hr class="bg-light col-md-4">
                     <a href="#" class="text-light">SiAdin Mahasiswa</a><br>
                     <a href="#" class="text-light">SiAdin Dosen</a><br>
@@ -92,6 +96,7 @@
                     <a href="#" class="text-light">Sistem Informasi Kerja Praktek</a>
                 </div>
                 <div class="col-md-3">
+                    <hr class="bg-light col-md-4">
                     <h5>FASILITAS</h5><hr class="bg-light col-md-4">
                     <a href="#" class="text-light">Mirror IKC</a><br>
                     <a href="#" class="text-light">Kulino</a><br>
