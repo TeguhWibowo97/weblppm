@@ -19,4 +19,12 @@ class PagesController extends Controller
     {
         return view('visimisi');
     }
+    public function kontak()
+    {
+        return view('kontak');
+    }
+    public function statistik()
+    {
+        return view('statistik');
+    }
 }

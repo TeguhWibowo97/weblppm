@@ -16,5 +16,7 @@ use App\Http\Controllers\PagesController;
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/sejarahsingkat', [PagesController::class, 'sejarahsingkat']);
 Route::get('/visimisi', [PagesController::class, 'visimisi']);
+Route::get('/kontak', [PagesController::class, 'kontak']);
+Route::get('/statistik', [PagesController::class, 'statistik']);
 
 // Route::get('/','PagesController@home');
