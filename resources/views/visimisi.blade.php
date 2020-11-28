@@ -12,7 +12,7 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="assetAdmin/foto/bgudinus.jpg" class="card-img" alt="...">
+                        <img src="assetAdmin/foto/bgvisi.jpg" class="card-img" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img src="assetAdmin/foto/bgudinus.jpg" class="card-img" alt="...">
+                        <img src="assetAdmin/foto/bgmisi.jpg" class="card-img" alt="...">
                     </div>
                 </div>
             </div>
