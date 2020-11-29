@@ -44,8 +44,19 @@
                             <a class="dropdown-item" href="{{url('visimisi')}}">Visi dan Misi</a>
                         </div>
                     </li>
-                    <li class="nav-item btn btn-info btn-sm mr-1 mt-1">
-                        <a class="nav-link text-light" href="#">Arsip</a>
+                    <li class="nav-item dropdown btn btn-info btn-sm mr-1 mt-1">
+                        <a class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Arsip
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="{{url('')}}">Majalah Internal</a>
+                            <a class="dropdown-item" href="{{url('')}}">Majalah Eksternal</a>
+                            <a class="dropdown-item" href="{{url('penelitian')}}">Penelitian</a>
+                            <a class="dropdown-item" href="{{url('pengabdian')}}">Pengabdian Kepada Masyarakat</a>
+                            <a class="dropdown-item" href="{{url('prosiding')}}">Prosiding</a>
+                            <a class="dropdown-item" href="{{url('tugasakhir')}}">Tugas Akhir</a>
+                        </div>
                     </li>
                     <li class="nav-item btn btn-info btn-sm mr-1 mt-1">
                         <a class="nav-link text-light" href="#">Galery</a>
@@ -55,6 +66,9 @@
                     </li>
                     <li class="nav-item btn btn-info btn-sm mr-1 mt-1">
                         <a class="nav-link text-light" href="{{url('statistik')}}">Statistik</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-success btn-sm mr-1 mt-1">
+                        <a class="nav-link text-light" href="#">Login</a>
                     </li>
                 </ul>
             </div>
@@ -71,47 +85,47 @@
                 <div class="col-md-3">
                     <hr class="bg-light col-md-4">
                     <h5>FAKULTAS</h5><hr class="bg-light col-md-4">
-                    <a href="#" class="text-light">Fakultas Ilmu Komputer</a><br>
-                    <a href="#" class="text-light">Fakultas Ilmu Budaya</a><br>
-                    <a href="#" class="text-light">Fakultas Teknik</a><br>
-                    <a href="#" class="text-light">Fakultas Kesehatan</a><br>
-                    <a href="#" class="text-light">Fakultas Ekonomi dan Bisnis</a><br>
-                    <a href="#" class="text-light">Pasca Sarjana</a>
+                    <a href="https://fik.dinus.ac.id/" target="_blank" class="text-light">Fakultas Ilmu Komputer</a><br>
+                    <a href="https://dinus.ac.id/faculty/42/humanities" target="_blank" class="text-light">Fakultas Ilmu Budaya</a><br>
+                    <a href="https://dinus.ac.id/faculty/45/enginering" class="text-light" target="_blank">Fakultas Teknik</a><br>
+                    <a href="https://dinus.ac.id/faculty/44/health-science" class="text-light" target="_blank">Fakultas Kesehatan</a><br>
+                    <a href="https://dinus.ac.id/faculty/40/economics-business" class="text-light" target="_blank">Fakultas Ekonomi dan Bisnis</a><br>
+                    <a href="#" class="text-light" target="_blank">Pasca Sarjana</a>
                 </div>
                 <div class="col-md-3">
                     <hr class="bg-light col-md-4">
                     <h5>MANAJEMEN</h5><hr class="bg-light col-md-4">
-                    <a href="#" class="text-light">Kantor Penjamin Mutu</a><br>
-                    <a href="#" class="text-light">Lembaga Kerjasama</a><br>
-                    <a href="#" class="text-light">Sarana dan Prasarana</a><br>
-                    <a href="#" class="text-light">Career Centre</a><br>
-                    <a href="#" class="text-light">Penelitian dan Pengabdian</a><br>
-                    <a href="#" class="text-light">Repository</a><br>
-                    <a href="#" class="text-light">Document Gateway</a><br>
-                    <a href="#" class="text-light">Simlitabmas</a>
+                    <a href="http://kpm.dinus.ac.id/" class="text-light" target="_blank">Kantor Penjamin Mutu</a><br>
+                    <a href="#" class="text-light" target="_blank">Lembaga Kerjasama</a><br>
+                    <a href="http://aset.dinus.ac.id/" class="text-light" target="_blank">Sarana dan Prasarana</a><br>
+                    <a href="http://cc.dinus.ac.id/" class="text-light" target="_blank">Career Centre</a><br>
+                    <a href="http://lppm.dinus.ac.id/" class="text-light" target="_blank">Penelitian dan Pengabdian</a><br>
+                    <a href="https://repository.dinus.ac.id/" class="text-light" target="_blank">Repository</a><br>
+                    <a href="http://eprints.dinus.ac.id/" class="text-light" target="_blank">Document Gateway</a><br>
+                    <a href="http://simlitabmas.lppm.dinus.ac.id/" class="text-light" target="_blank">Simlitabmas</a>
                 </div>
                 <div class="col-md-3">
                     <hr class="bg-light col-md-4">
                     <h5>AKADEMIK</h5><hr class="bg-light col-md-4">
-                    <a href="#" class="text-light">SiAdin Mahasiswa</a><br>
-                    <a href="#" class="text-light">SiAdin Dosen</a><br>
-                    <a href="#" class="text-light">Sistem Informasi Akademik</a><br>
-                    <a href="#" class="text-light">Sistem Informasi Kepegawaian</a><br>
-                    <a href="#" class="text-light">Sistem Informasi Wisuda</a><br>
-                    <a href="#" class="text-light">Sistem Informasi Tugas Akhir</a><br>
-                    <a href="#" class="text-light">Sistem Informasi Kerja Praktek</a>
+                    <a href="https://dinus.ac.id/student" class="text-light" target="_blank">SiAdin Mahasiswa</a><br>
+                    <a href="https://dinus.ac.id/staf" class="text-light" target="_blank">SiAdin Dosen</a><br>
+                    <a href="http://academic.dinus.ac.id/" class="text-light" target="_blank">Sistem Informasi Akademik</a><br>
+                    <a href="http://simpeg.dinus.ac.id/auth" class="text-light" target="_blank">Sistem Informasi Kepegawaian</a><br>
+                    <a href="#" class="text-light" target="_blank">Sistem Informasi Wisuda</a><br>
+                    <a href="#" class="text-light" target="_blank">Sistem Informasi Tugas Akhir</a><br>
+                    <a href="https://dinus.ac.id/kerjapraktek/" class="text-light" target="_blank">Sistem Informasi Kerja Praktek</a>
                 </div>
                 <div class="col-md-3">
                     <hr class="bg-light col-md-4">
                     <h5>FASILITAS</h5><hr class="bg-light col-md-4">
                     <a href="#" class="text-light">Mirror IKC</a><br>
-                    <a href="#" class="text-light">Kulino</a><br>
-                    <a href="#" class="text-light">Video Kampus</a><br>
-                    <a href="#" class="text-light">TV Kampus</a><br>
+                    <a href="https://kulino.dinus.ac.id/" class="text-light">Kulino</a><br>
+                    <a href="https://www.youtube.com/user/dinuschannel" class="text-light">Video Kampus</a><br>
+                    <a href="http://tvku.tv/live" class="text-light">TV Kampus</a><br>
                     <a href="#" class="text-light">Digital Library</a><br>
-                    <a href="#" class="text-light">Poliklinik</a><br>
+                    <a href="http://poli.dinus.ac.id/" class="text-light">Poliklinik</a><br>
                     <a href="#" class="text-light">Forum Diskusi</a><br>
-                    <a href="#" class="text-light">E-Gamelan</a><br>
+                    <a href="http://e-gamelanku.dinus.ac.id/" class="text-light">E-Gamelan</a><br>
                 </div>
             </div>
             <hr class="bg-light">

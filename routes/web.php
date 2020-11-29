@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PenelitianController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +19,10 @@ Route::get('/sejarahsingkat', [PagesController::class, 'sejarahsingkat']);
 Route::get('/visimisi', [PagesController::class, 'visimisi']);
 Route::get('/kontak', [PagesController::class, 'kontak']);
 Route::get('/statistik', [PagesController::class, 'statistik']);
+
+Route::get('/penelitian',[PenelitianController::class, 'penelitian']);
+Route::get('/pengabdian',[PenelitianController::class, 'pengabdian']);
+Route::get('/prosiding',[PenelitianController::class, 'prosiding']);
+Route::get('/tugasakhir',[PenelitianController::class, 'tugasakhir']);
 
 // Route::get('/','PagesController@home');
