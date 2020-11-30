@@ -25,4 +25,7 @@ Route::get('/pengabdian',[PenelitianController::class, 'pengabdian']);
 Route::get('/prosiding',[PenelitianController::class, 'prosiding']);
 Route::get('/tugasakhir',[PenelitianController::class, 'tugasakhir']);
 
+Route::get('/tambah',[PenelitianController::class, 'tambah']);
+Route::post('/adddata',[PenelitianController::class, 'adddata']);
+
 // Route::get('/','PagesController@home');

@@ -118,14 +118,14 @@
                 <div class="col-md-3">
                     <hr class="bg-light col-md-4">
                     <h5>FASILITAS</h5><hr class="bg-light col-md-4">
-                    <a href="#" class="text-light">Mirror IKC</a><br>
-                    <a href="https://kulino.dinus.ac.id/" class="text-light">Kulino</a><br>
-                    <a href="https://www.youtube.com/user/dinuschannel" class="text-light">Video Kampus</a><br>
-                    <a href="http://tvku.tv/live" class="text-light">TV Kampus</a><br>
-                    <a href="#" class="text-light">Digital Library</a><br>
-                    <a href="http://poli.dinus.ac.id/" class="text-light">Poliklinik</a><br>
-                    <a href="#" class="text-light">Forum Diskusi</a><br>
-                    <a href="http://e-gamelanku.dinus.ac.id/" class="text-light">E-Gamelan</a><br>
+                    <a href="#" target="_blank" class="text-light">Mirror IKC</a><br>
+                    <a href="https://kulino.dinus.ac.id/" target="_blank" class="text-light">Kulino</a><br>
+                    <a href="https://www.youtube.com/user/dinuschannel" target="_blank" class="text-light">Video Kampus</a><br>
+                    <a href="http://tvku.tv/live" target="_blank" class="text-light">TV Kampus</a><br>
+                    <a href="#" target="_blank" class="text-light">Digital Library</a><br>
+                    <a href="http://poli.dinus.ac.id/" target="_blank" class="text-light">Poliklinik</a><br>
+                    <a href="#" target="_blank" class="text-light">Forum Diskusi</a><br>
+                    <a href="http://e-gamelanku.dinus.ac.id/" target="_blank" class="text-light">E-Gamelan</a><br>
                 </div>
             </div>
             <hr class="bg-light">

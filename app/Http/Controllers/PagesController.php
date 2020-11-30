@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
+use App\Models\Penelitian;
+use Illuminate\Support\Collection;
 
 class PagesController extends Controller
 {
@@ -25,6 +27,21 @@ class PagesController extends Controller
     }
     public function statistik()
     {
-        return view('statistik');
+        $penelitian = Penelitian::all();
+
+        $tahun = [];
+        $isi = [];
+
+        foreach($penelitian as $p)
+        {
+            $tahun[$p->tahun] = $p->tahun;
+        }
+
+        // dd(json_encode($tahun));
+
+        $collection = collect($tahun);
+        $sorted = $collection->sortDesc();
+
+        return view('statistik',['tahun'=>$sorted->values()->all()]);
     }
 }

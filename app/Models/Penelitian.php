@@ -9,8 +9,7 @@ class Penelitian extends Model
 {
     use HasFactory;
 
-    public function getAllPenelitian()
-    {
-        
-    }
+    protected $fillable = ['judul','tahun'];
+
+    
 }

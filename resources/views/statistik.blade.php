@@ -20,20 +20,7 @@
             text: 'Penelitian Per Tahun'
         },
         xAxis: {
-            categories: [
-                'Jan',
-                'Feb',
-                'Mar',
-                'Apr',
-                'May',
-                'Jun',
-                'Jul',
-                'Aug',
-                'Sep',
-                'Oct',
-                'Nov',
-                'Dec'
-            ],
+            categories: {!! json_encode($tahun) !!}, 
             crosshair: true
         },
         yAxis: {
