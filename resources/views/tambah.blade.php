@@ -32,6 +32,46 @@
                     <label>Tahun</label>
                     <input type="text" class="form-control" name="tahun">
                 </div>
+                <div class="form-group">
+                    <label>Peneliti</label>
+                    <input type="text" class="form-control" name="peneliti">
+                </div>
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <select class="form-control" name="kategori">
+                        <option value="IBM">IBM</option>
+                        <option value="Ipteks">Ipteks</option>
+                        <option value="PTUPT">PTUPT</option>
+                        <option value="Penelitian Dosen Pemula">Penelitian Dosen Pemula</option>
+                        <option value="Penelitian Terapan">Penelitian Terapan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Fakultas</label>
+                    <select class="form-control" name="fakultas">
+                        <option value="FIK">FIK</option>
+                        <option value="FIB">FIB</option>
+                        <option value="FEB">FEB</option>
+                        <option value="FT">FT</option>
+                        <option value="FKES">FKES</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>NPP</label>
+                    <input type="text" class="form-control" name="npp">
+                </div>
+                <div class="form-group">
+                    <label>NIDN</label>
+                    <input type="text" class="form-control" name="nidn">
+                </div>
+                <div class="form-group">
+                    <label>Jabatan Fungsional</label>
+                    <select class="form-control" name="jabfung">
+                        <option value="Asisten Ahli">Asisten Ahli</option>
+                        <option value="Lektor Kepla">Lektor Kepala</option>
+                        <option value="Guru Besar">Guru Besar</option>
+                    </select>
+                </div>
                 <button type="submit" class="btn btn-primary">Tambah</button>
             </form>
         </div>

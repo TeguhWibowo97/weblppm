@@ -17,6 +17,12 @@ class CreatePenelitiansTable extends Migration
             $table->id();
             $table->string('judul',255);
             $table->string('tahun');
+            $table->string('fakultas',100);
+            $table->string('peneliti',170);
+            $table->string('kategori',100);
+            $table->string('npp',50);
+            $table->string('nidn',50);
+            $table->string('jabfung',100);
             $table->timestamps();
         });
     }

@@ -15,20 +15,22 @@
             <br>
             <table class="table mt-3">
                 <tbody>
-                <?php for($i=1; $i<=10; $i++):?>
+                @foreach($penelitian as $p)
                     <tr>
                         <tr> 
-                            <td><h5 class="text-justify">Sistem Informasi Manajemen Lingkungan Sistem Informasi Manajemen Lingkungan Sistem Informasi Manajemen Lingkungan Sistem Informasi Manajemen Lingkungan</h5>
+                            <td><h5 class="text-justify">  
+                                    <a href="penelitian/detail/{{$p->id}} " target="_blank">{{$p->judul}}</a>
+                                </h5>
                                 
-                                Penulis : <span class="badge badge-warning">Teguh Wibowo</span>
-                                NPP : <span class="badge badge-success">0686.11.2019.2020</span>
-                                NIDN : <span class="badge badge-info">07898765</span>
-                                JabFungsional : <span class="badge badge-danger">Guru Besar</span>
+                                Penulis : <span class="badge badge-warning">{{$p->peneliti}}</span>
+                                NPP : <span class="badge badge-success">{{$p->npp}}</span>
+                                NIDN : <span class="badge badge-info">{{$p->nidn}}</span>
+                                JabFungsional : <span class="badge badge-danger">{{$p->jabfung}}</span>
                             </td>
                         </tr>
                     </tr>
+                @endforeach
                 </tbody>
-                <?php endfor;?>
             </table>
         </div>
     </div>

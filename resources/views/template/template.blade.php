@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container">
             <a class="navbar-brand text-white" href="{{url('')}}"> 
-                <img src="assetAdmin/foto/logoudinus.png" alt="" class="img-fluid" style="max-width:200px; height:55px;">
+                <img src="{{url('assetAdmin/foto/logoudinus.png')}}" alt="" class="img-fluid" style="max-width:200px; height:55px;">
             </a>
             <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"

@@ -9,7 +9,16 @@ class Penelitian extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['judul','tahun'];
+    protected $fillable = [
+        'judul',
+        'tahun',
+        'peneliti',
+        'fakultas',
+        'kategori',
+        'npp',
+        'nidn',
+        'jabfung'
+    ];
 
     
 }

@@ -9,7 +9,8 @@ class PenelitianController extends Controller
 {
     public function penelitian()
     {
-        return view('arsip/penelitianudinus');
+        $penelitian = Penelitian::all();
+        return view('arsip/penelitianudinus',['penelitian'=>$penelitian]);
     }
     public function pengabdian()
     {
@@ -33,5 +34,12 @@ class PenelitianController extends Controller
     {
         $data = Penelitian::create($request->all());
         return redirect('tambah')->with('pesan','Data Berhasil Ditambahkan');
+    }
+    public function detail($id)
+    {
+        $penelitian = Penelitian::where('id',$id)
+                    ->get();
+        
+        return view('arsip/detailpenelitian',['penelitian'=>$penelitian]);
     }
 }
