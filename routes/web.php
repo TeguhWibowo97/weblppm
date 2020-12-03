@@ -28,6 +28,8 @@ Route::get('/tugasakhir',[PenelitianController::class, 'tugasakhir']);
 Route::get('/tambah',[PenelitianController::class, 'tambah']);
 Route::post('/adddata',[PenelitianController::class, 'adddata']);
 Route::get('/penelitian/detail/{id}',[PenelitianController::class, 'detail']);
+Route::post('/penelitian/cari',[PenelitianController::class, 'cari']);
+
 
 
 // Route::get('/','PagesController@home');

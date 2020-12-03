@@ -8,8 +8,9 @@
         <div class="container">
             <h1 class="text-center mt-5">Daftar Penelitian Universitas Dian Nuswantoro</h1>
             <hr>
-            <form class="form-inline my-3 float-right ">
-                <input class="form-control mr-sm-2" type="search" placeholder="Cari Data Disini" aria-label="Search">
+            <form class="form-inline my-3 float-right" method="POST" action="penelitian/cari">
+                @csrf
+                <input class="form-control mr-sm-2" name="cari" type="search" placeholder="Cari Data Disini" aria-label="Search">
                 <button class="btn btn-success my-2 my-sm-0" type="submit"><i class="fas fa-search"> Cari</i></button>
             </form>
             <br>

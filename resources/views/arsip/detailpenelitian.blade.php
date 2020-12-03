@@ -53,7 +53,9 @@
                                     <tr>
                                         <td>Jabatan Fungsional</td>
                                         <td>:</td>
-                                        <td>{{$p->jabfung}}</td>
+                                        <td>
+                                            <span class="badge badge-warning">{{$p->jabfung}}</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Email</td>
@@ -63,37 +65,51 @@
                                     <tr>
                                         <td>Kategori Research</td>
                                         <td>:</td>
-                                        <td>{{$p->kategori}}</td>
+                                        <td>
+                                            <span class="badge badge-info">{{$p->kategori}}</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Dana</td>
                                         <td>:</td>
-                                        <td>Rp {{ number_format(6000000) }}</td>
+                                        <td>
+                                            <span class="badge badge-success">Rp {{ number_format(6000000) }}</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Proposal</td>
                                         <td>:</td>
-                                        <td></td>
+                                        <td>
+                                            <img src="{{url('assetAdmin/foto/checked.png')}}" style="max-width:25px; height:auto;">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Lap. Kemajuan</td>
                                         <td>:</td>
-                                        <td></td>
+                                        <td>
+                                            <img src="{{url('assetAdmin/foto/cancel.png')}}" style="max-width:25px; height:auto;">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Bukti Kontrak</td>
                                         <td>:</td>
-                                        <td></td>
+                                        <td>
+                                            <img src="{{url('assetAdmin/foto/checked.png')}}" style="max-width:25px; height:auto;">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Lap Akhir</td>
                                         <td>:</td>
-                                        <td></td>
+                                        <td>
+                                            <img src="{{url('assetAdmin/foto/cancel.png')}}" style="max-width:25px; height:auto;">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Bukti Publikasi</td>
                                         <td>:</td>
-                                        <td></td>
+                                        <td>
+                                            <img src="{{url('assetAdmin/foto/cancel.png')}}" style="max-width:25px; height:auto;">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>

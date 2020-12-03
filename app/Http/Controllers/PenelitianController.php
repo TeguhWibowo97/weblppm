@@ -14,7 +14,8 @@ class PenelitianController extends Controller
     }
     public function pengabdian()
     {
-        return view('arsip/pengabdian');
+        $penelitian = Penelitian::all();
+        return view('arsip/pengabdian',['penelitian'=>$penelitian]);
     }
     public function prosiding()
     {
@@ -41,5 +42,14 @@ class PenelitianController extends Controller
                     ->get();
         
         return view('arsip/detailpenelitian',['penelitian'=>$penelitian]);
+    }
+
+    public function cari(Request $request)
+    {
+        $penelitian = Penelitian::where('judul','like', '%'.$request->cari.'%')
+                        ->orWhere('peneliti', 'like', '%'.$request->cari.'%')->get();
+        
+        return view('arsip/caripeneliti',['penelitian'=>$penelitian]);
+        // dd($penelitian);
     }
 }
