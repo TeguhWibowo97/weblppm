@@ -49,6 +49,10 @@ class PenelitianController extends Controller
         $penelitian = Penelitian::where('judul','like', '%'.$request->cari.'%')
                         ->orWhere('peneliti', 'like', '%'.$request->cari.'%')->get();
         
+        if(($penelitian->count())<1)
+        {
+            $penelitian = null;
+        }
         return view('arsip/caripeneliti',['penelitian'=>$penelitian]);
         // dd($penelitian);
     }

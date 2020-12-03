@@ -10,33 +10,36 @@
             <hr>
             <form class="form-inline my-3 float-right" method="POST" action="cari">
                 @csrf
-                <input class="form-control mr-sm-2" name="cari" type="search" placeholder="Cari Data Disini" aria-label="Search">
+                <input class="form-control mr-sm-2" name="cari" type="search" placeholder="Cari Data Disini"
+                    aria-label="Search">
                 <button class="btn btn-success my-2 my-sm-0" type="submit"><i class="fas fa-search"> Cari</i></button>
             </form>
         </div>
         <div class="container">
             <table class="table mt-3">
                 <tbody>
-                @foreach($penelitian as $p)
-                @if($penelitian == NULL)
-                    <h1 class="text-center text-primary">-- Hasil Tidak Ditemukan --</h1>
-                @else
-                    <tr>
+                    @if($penelitian==null)
+                        <div class="alert alert-danger text-center font-weight-bold" role="alert">
+                            -- Data yang anda cari tidak ditemukan --
+                        </div>
+                    @else
+                        @foreach($penelitian as $p)
                         <tr>
-                            <td>
-                                <h5 class="text-justify">
-                                    <a href="penelitian/detail/{{$p->id}} " target="_blank">{{$p->judul}}</a>
-                                </h5>
+                            <tr>
+                                <td>
+                                    <h5 class="text-justify">
+                                        <a href="detail/{{$p->id}} ">{{$p->judul}}</a>
+                                    </h5>
 
-                                Penulis : <span class="badge badge-warning">{{$p->peneliti}}</span>
-                                NPP : <span class="badge badge-success">{{$p->npp}}</span>
-                                NIDN : <span class="badge badge-info">{{$p->nidn}}</span>
-                                JabFungsional : <span class="badge badge-danger">{{$p->jabfung}}</span>
-                            </td>
+                                    Penulis : <span class="badge badge-warning">{{$p->peneliti}}</span>
+                                    NPP : <span class="badge badge-success">{{$p->npp}}</span>
+                                    NIDN : <span class="badge badge-info">{{$p->nidn}}</span>
+                                    JabFungsional : <span class="badge badge-danger">{{$p->jabfung}}</span>
+                                </td>
+                            </tr>
                         </tr>
-                    </tr>
-                @endif
-                    @endforeach
+                        @endforeach
+                    @endif
                 </tbody>
             </table>
         </div>

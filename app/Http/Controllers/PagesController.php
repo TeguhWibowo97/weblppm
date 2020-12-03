@@ -30,18 +30,31 @@ class PagesController extends Controller
         $penelitian = Penelitian::all();
 
         $tahun = [];
-        $isi = [];
+        $kategori = [];
+        $fakultas = [];
 
         foreach($penelitian as $p)
         {
             $tahun[$p->tahun] = $p->tahun;
+            $kategori['$p->kategori'] = $p->kategori;
         }
+        foreach($penelitian as $p)
+        {
+            $fakultas[$p->fakultas] = $p->fakultas;
+        }
+
 
         // dd(json_encode($tahun));
 
         $collection = collect($tahun);
         $sorted = $collection->sortDesc();
 
-        return view('statistik',['tahun'=>$sorted->values()->all()]);
+        // dd(json_encode($sorted));
+
+        return view('statistik',[
+            'tahun'=>$sorted->values()->all(),
+            'kategori' => $kategori,
+            'fakultas' => $fakultas
+            ]);
     }
 }

@@ -1,6 +1,6 @@
-@extends('template/template');
+@extends('template/template')
 
-@section('title','Statistik | LPPM UDINUS');
+@section('title','Statistik | LPPM UDINUS')
 
 @section('container')
 
@@ -64,7 +64,7 @@
             text: 'Penelitian Per Fakultas'
         },
         xAxis: {
-            categories: {!! json_encode($tahun) !!}, 
+            categories: {!! json_encode($fakultas) !!}, 
             crosshair: true
         },
         yAxis: {
@@ -102,7 +102,7 @@
             text: 'Penelitian Per Kategori'
         },
         xAxis: {
-            categories: {!! json_encode($tahun) !!}, 
+            categories: {!! json_encode($kategori) !!}, 
             crosshair: true
         },
         yAxis: {
@@ -131,4 +131,4 @@
     });
                 
 </script>
-@endsection;
+@endsection
