@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PenelitianController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +31,7 @@ Route::post('/adddata',[PenelitianController::class, 'adddata']);
 Route::get('/penelitian/detail/{id}',[PenelitianController::class, 'detail']);
 Route::post('/penelitian/cari',[PenelitianController::class, 'cari']);
 
+Route::get('/user',[UserController::class, 'user'] );
 
 
 // Route::get('/','PagesController@home');

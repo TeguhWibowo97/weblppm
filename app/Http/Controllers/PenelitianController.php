@@ -11,6 +11,7 @@ class PenelitianController extends Controller
     {
         $penelitian = Penelitian::all();
         return view('arsip/penelitianudinus',['penelitian'=>$penelitian]);
+        // return $penelitian;
     }
     public function pengabdian()
     {
@@ -56,4 +57,5 @@ class PenelitianController extends Controller
         return view('arsip/caripeneliti',['penelitian'=>$penelitian]);
         // dd($penelitian);
     }
+    
 }
